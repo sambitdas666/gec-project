@@ -37,7 +37,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 /* ==================== NAVIGATION ==================== */
@@ -71,7 +71,7 @@ body{
 .black-theme .logo span,
 .black-theme .search-icon,
 .black-theme .nav-item a {
-    color: #000 !important;
+    color: #000000 !important;
 }
 
 .logo{
@@ -487,3 +487,18 @@ body{
         font-size: 1.3rem;
     }
 }
+
+/* Destiantion  */
+
+.section-title span img{
+    width: 40px;
+    height: 40px;
+}
+.section-title span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
