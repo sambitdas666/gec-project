@@ -43,10 +43,7 @@ const Hero = () => {
           </div>
 
         </div>
-
-        <button className='flex itmes-center justify-content gap-1 px-9 py-3 max-sm:mt-4 bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer'>
-            <img src={assets.search_icon} alt="search" className="brightness-300" />
-          </button>
+        
       </form>
 
       <img src={assets.main_car} alt="car" className="max-h-72 object-contain" />
