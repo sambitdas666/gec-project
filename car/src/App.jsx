@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import CarDetails from './pages/CarDetails'
 import Cars from './pages/Cars'
 import MyBooking from './pages/MyBooking'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -14,14 +15,17 @@ function App() {
 
   return (
     <>
-      { !isOwnerPath &&<Navbar setShowLogin={setShowLogin}/>}
+      {!isOwnerPath && <Navbar setShowLogin={setShowLogin} />}
 
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/car-details/:id" element={<CarDetails/>} />
-        <Route path='/cars' element={<Cars/>} />
-        <Route path='/my-bookings' element={<MyBooking/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/car-details/:id" element={<CarDetails />} />
+        <Route path='/cars' element={<Cars />} />
+        <Route path='/my-bookings' element={<MyBooking />} />
       </Routes>
+
+      {!isOwnerPath && <Footer />}
+      <Footer />
     </>
   )
 }
